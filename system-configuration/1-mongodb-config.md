@@ -2,7 +2,7 @@
 
 ## Pre-requisites
 
-Ensure that mongo is running and installed through the installation script mentioned in [gke-infectieradar-installation](https://github.com/InfectieradarBE/infectieradar-getting-started/blob/main/installation/3-install-infectieradar-gke.md). 
+Ensure that mongo is running and installed through the installation script mentioned in [gke-infectieradar-installation](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/installation/3-install-infectieradar-gke.md). 
 
 Note: This also assumes that you have created the required entries for Mongo usernames and passwords in the guide in [Cluster Management](https://github.com/InfectieradarBE/cluster-management)
 

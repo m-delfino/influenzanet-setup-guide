@@ -15,7 +15,7 @@ In case the workload fails to bring up a new instance of the new image. There ar
 8. In the rare case that all of the above fails, there is a method to re-create the specific deployment that is failing:
     8.1. To do so go back to workloads, delete the deployment that is failing (for example: web-client).
     8.2. Navigate to clusters, click on the 3 dots and then connect.
-    8.3. Once you're in the terminal cd to the cluster-management directory. (this should have been created previously in the section [gke-infectieradar-installation](https://github.com/InfectieradarBE/infectieradar-getting-started/blob/main/installation/3-install-infectieradar-gke.md)). If not present, re-clone the repo and set the branch to correct country.
+    8.3. Once you're in the terminal cd to the cluster-management directory. (this should have been created previously in the section [gke-infectieradar-installation](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/installation/3-install-infectieradar-gke.md)). If not present, re-clone the repo and set the branch to correct country.
     8.4. Navigate to the deployments folder in this repository.
     8.5. You can re-create the specific deployment (in our case the web-client) by running the command ``` kubectl create -f web-client-deployment.yaml  ```
     8.6. This will create a fresh deployment of the participant-webapp. This process can be repeated for any of the other deployments as well, just by changing the file name in 8.5. (Use this only if all above fails)

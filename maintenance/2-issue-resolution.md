@@ -32,7 +32,7 @@ Once an immediate response is drafted by the support team, the system admin take
     - Look for Kubernetes in the menu on the top left corner and click on clusters
     - Workloads gives you a description of the services that are currently running -> How many pods, which image version is being used, current limits on resources=> how much ram or cpu can a pod take (upper limit), etc.
     - To investigate mongodb
-        - Connect to mongodb by following the steps mentioned in [mongo-connect-configure](https://github.com/InfectieradarBE/infectieradar-getting-started/blob/main/system-configuration/1-mongodb-config.md)
+        - Connect to mongodb by following the steps mentioned in [mongo-connect-configure](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/system-configuration/1-mongodb-config.md)
         - Now you should be inside the mongo shell
         - List the databases by running ```show dbs```
         - The following databases are of importance:
