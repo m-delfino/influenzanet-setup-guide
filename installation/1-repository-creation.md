@@ -29,7 +29,7 @@ Permissions for access can be granted by navigating to the forked repository, cl
 
 Throughout the course of your individual deployment of Infectieradar, there are going to be changes made to your forked repository that might need to be merged back into the main Influenzanet repository. To do so, generally create a pull request onto the Influenzanet repository from your fork using the official GitHub account. 
 
-Do so periodically to avoid having to face issues in adopting in new features coming in from the Influenzanet repositories. 
+Similarly, there may also be new features or changes coming in from the main Influenzanet repository. Periodically merge these into your forked repository to avoid having to face issues in adopting in new features coming in from the Influenzanet repositories. 
 
 ##  From forks to your local machine
 
