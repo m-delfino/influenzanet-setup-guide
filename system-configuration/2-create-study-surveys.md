@@ -28,7 +28,7 @@ To create a new survey make use of the [Study-Manager-App](https://github.com/In
 
 Once the questions have been coded in, you can download the surveys for intake and weekly questions by following these steps:
 1. Run ```yarn start```
-2. In the User Interface select the instance "belgium or bel" and select intake.
+2. In the User Interface select for example the instance "belgium or bel" and select intake. Replace belgium with your instance here.
 3. This loads the visual representation of the intake survey. Scroll to the bottom, enter the studykey "infectieradar-be" (or what you set previously while creating a study) and click download.
 4. Repeat step 3 for weekly surveys.
 

@@ -6,7 +6,7 @@ This is a brief guide to the different repositories present within the scope of 
 First we take a look at the different parts of Infectieradar. Here, we use the term repository to specify a "Github repository" unless stated otherwise.
 
 # Current Service Information
-These repositories form the core services of the Infectieradar platform for Belgium
+These repositories form the core services of the Infectieradar platform.
 
 | Service        | Repository           | Function  |
 | -------------- | -------------------- | ----------------:|

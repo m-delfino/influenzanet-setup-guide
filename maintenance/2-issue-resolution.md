@@ -35,7 +35,7 @@ Once an immediate response is drafted by the support team, the system admin take
         - Connect to mongodb by following the steps mentioned in [mongo-connect-configure](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/system-configuration/1-mongodb-config.md)
         - Now you should be inside the mongo shell
         - List the databases by running ```show dbs```
-        - The following databases are of importance:
+        - The following databases are of importance (we use belgium as an example instance here):
             - Belgium_users - > contains collections of users in the system
             - begium_studyDB -> contains collections for each study in the platform and it’s participants, surveys and surveyResponses.
         - To use a database enter ```use db-name```. For ex: ```use belgium_users```

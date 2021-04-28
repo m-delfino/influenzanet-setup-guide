@@ -9,7 +9,7 @@ Note: This also assumes that you have created the required entries for Mongo use
 ## Connecting to Mongo
 
 1. Connect to the Kubernetes cluster by logging in to the google cloud platform.
-2. Once connected, we need to find the pod id where mongo is running. Do this by running ```kubectl get pods -n belgium```
+2. Once connected, we need to find the pod id where mongo is running. We use "belgium" as an example instance, please replace with your namespace. Do this by running ```kubectl get pods -n belgium```
 3. This returns a list of active pods, copy the id of the one with mongo in its name. Usually something similar to ```mongo-77cf57567c-c8nkp```
 4. Use this enter into the mongo pod by running the command ``` kubectl exec -it <copied-mongo-id> --namespace=belgium -c mongo bash ```
 5. This should bring up a shell where you need to enter ``` mongo -u <username> -p <password> ```
