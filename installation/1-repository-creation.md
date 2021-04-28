@@ -15,7 +15,7 @@ The major components and services of the Infectieradar platform are centrally ho
 
 ### Setting up the repositories
 
-For each of the relavant services listed in the table in the central [Readme](https://github.com/influenzanet/infectieradar-setup-guide/README.md) navigate to the repository hosted at Influenzanet. Make sure you are logged into the institution account you created on Github. Fork each of the respositories in the table into your institutions personal github account. Once completed you should have 9 forked repositories (namely: api-gateway, study-service, user-management-service, messaging-service, logging-service, participant-webapp, study-manager-app, study-manager-scripts and cluster-management).
+For each of the relavant services listed in the table in the central [Readme](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/README.md) navigate to the repository hosted at Influenzanet. Make sure you are logged into the institution account you created on Github. Fork each of the respositories in the table into your institutions personal github account. Once completed you should have 9 forked repositories (namely: api-gateway, study-service, user-management-service, messaging-service, logging-service, participant-webapp, study-manager-app, study-manager-scripts and cluster-management).
 
 **For example:** To add the particpant API and management API, navigate to the [api-gateway](https://github.com/influenzanet/api-gateway) repository in Influenzanet, click on the fork icon to create a forked copy into your GitHub account.
 
