@@ -48,9 +48,9 @@ In this section we explain the following tasks:
 
 | Section Topic        | Instruction File  |
 | -------------- | ----------------:|
-| Starting from scratch - set up the required Github repositories    | [repository-creation](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/installation/1-repository-creation.md) |
-| Set-up dockerhub and automated builds   | [dockerhub-setup](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/installation/2-dockerhub-setup.md) |
-| Prepare a Google Kubernetes Environment and Install Infectieradar    | [gke-infectieradar-installation](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/installation/3-install-infectieradar-gke.md) |
+| Starting from scratch - set up the required Github repositories    | [repository-creation](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/installation/1-repository-creation.md) |
+| Set-up dockerhub and automated builds   | [dockerhub-setup](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/installation/2-dockerhub-setup.md) |
+| Prepare a Google Kubernetes Environment and Install Infectieradar    | [gke-infectieradar-installation](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/installation/3-install-infectieradar-gke.md) |
 
 ## Initial System Configurations
 
@@ -60,11 +60,11 @@ The topics covered are as follows:
 
 | Section Topic        | Instruction File  |
 | -------------- | ----------------:|
-| How to access Mongo DB and create the initial DB configurations    | [mongo-connect-configure](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/system-configuration/1-mongodb-config.md) |
-| Creating & uploading Studies and Surveys for the Infectieradar platform    | [create-study-surveys](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/system-configuration/2-create-study-surveys.md) |
-| How to create and upload Email Templates to be sent out by the platform    | [create-upload-emails](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/system-configuration/3-email-setup.md) |
-| Setting up mailing service configurations| [mailing-configuration](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/system-configuration/5-mailing-config.md) |
-| Configuring layouts and pages in the web-ui| [web-ui-configuration](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/system-configuration/4-web-config.md) |
+| How to access Mongo DB and create the initial DB configurations    | [mongo-connect-configure](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/1-mongodb-config.md) |
+| Creating & uploading Studies and Surveys for the Infectieradar platform    | [create-study-surveys](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/2-create-study-surveys.md) |
+| How to create and upload Email Templates to be sent out by the platform    | [create-upload-emails](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/3-email-setup.md) |
+| Setting up mailing service configurations| [mailing-configuration](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/5-mailing-config.md) |
+| Configuring layouts and pages in the web-ui| [web-ui-configuration](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/4-web-config.md) |
 
 ## How to make changes and re-deploy
 
@@ -74,9 +74,9 @@ Topics covered here are:
 
 | Section Topic        | Instruction File  |
 | -------------- | ----------------:|
-| Types of code changes  | [change-types](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/redeploying-changes/1-change-types.md) |
-| Automated builds and re-deployment to Google cloud   | [build-and-redeploy](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/redeploying-changes/2-build-and-redeploy.md) |
-| Roll-back in case of errors     | [rollback-errors](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/redeploying-changes/3-rollback-errors.md) |
+| Types of code changes  | [change-types](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/redeploying-changes/1-change-types.md) |
+| Automated builds and re-deployment to Google cloud   | [build-and-redeploy](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/redeploying-changes/2-build-and-redeploy.md) |
+| Roll-back in case of errors     | [rollback-errors](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/redeploying-changes/3-rollback-errors.md) |
 
 ## Maintenance Activities
 
@@ -84,6 +84,6 @@ Activites to be scheduled over the life-cycle of the Infectieradar-platform:
 
 | Section Topic        | Instruction File  |
 | -------------- | ----------------:|
-| Maintenance Activity checklist | [checklist](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/maintenance/1-checklist.md) |
-| Issue resoution | [issue-resolution](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/maintenance/2-issue-resolution.md) |
-| Scaling resource allocations to cope with loads | [scaling-resources](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/maintenance/3-resource-scaling.md) |
+| Maintenance Activity checklist | [checklist](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/maintenance/1-checklist.md) |
+| Issue resoution | [issue-resolution](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/maintenance/2-issue-resolution.md) |
+| Scaling resource allocations to cope with loads | [scaling-resources](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/maintenance/3-resource-scaling.md) |

@@ -7,7 +7,7 @@ To begin, it is advisable to set up an institution account on Github ideally wit
 
 ##  Influenzanet
 
-The major components and services of the Infectieradar platform are centrally hosted under the [Influenzanet](https://github.com/influenzanet) collection of respositories. The relevant respositories that we need are indicated in two tables in the central [Readme](https://github.com/influenzanet/infectieradar-setup-guide/blob/main/README.md)*. For the deployment of a specific country, we will be creating forks of these repositories and making changes to these forks. Periodically we will also be creating pull requests to the central repositories n Influenzanet to maintain synchronisation and to regularly take in updates.
+The major components and services of the Infectieradar platform are centrally hosted under the [Influenzanet](https://github.com/influenzanet) collection of respositories. The relevant respositories that we need are indicated in two tables in the central [Readme](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/README.md)*. For the deployment of a specific country, we will be creating forks of these repositories and making changes to these forks. Periodically we will also be creating pull requests to the central repositories n Influenzanet to maintain synchronisation and to regularly take in updates.
  
 \* Look for the name listed under the column "Repository"
 
