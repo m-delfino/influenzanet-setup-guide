@@ -7,7 +7,7 @@ Infectieradar is firstly a survey platform. This section explains the steps invo
 To create, and upload studies and surveys you need to configure two repositories on a local machine:
 
 1. [Study-Manager-App](https://github.com/InfectieradarBE/study-manager-app): Clone the repository in the link. Install the required dependencies by running ``` yarn start ```, and you can get started with designing the surveys.
-2. [Study-Manager-Scripts](https://github.com/InfectieradarBE/study-manager-scripts): Clone the repository in the link. The readme here consists of explanations of how to upload new surveys and studies to a deployed version of Infectieradar. Navigate to resources/config.yaml and enter the credentials of admin user (configured in mongo configurations). Also add the links for the management api and participant api. (Generally https://your-domain-goes-here/admin & https://your-domain-goes-here/api ) 
+2. [Study-Manager-Scripts](https://github.com/InfectieradarBE/study-manager-scripts): Clone the repository in the link. The readme here consists of explanations of how to upload new surveys and studies to a deployed version of Infectieradar. Navigate to resources/config.yaml and enter the credentials of the admin user (configured in mongo configurations). Also, add the links for the management API and participant API. (Generally https://your-domain-goes-here/admin & https://your-domain-goes-here/api ) 
 
 
 ## Creating a study
@@ -39,7 +39,7 @@ Once these files have been copied, run the following:
 2. To upload the weekly survey, ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/study/<downloaded-weekly-file-name>.json ```
 3. Lastly upload the migration survey (needed for some internal configuration), by running ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/study/nl-migration.json ``` (this file is already present in the folder)
 
-With these steps completed, a logged in user should see the intake survey. Weekly surveys will show up once the intake has been filled.
+With these steps completed, a logged-in user should see the intake survey. Weekly surveys will show up once the intake has been filled.
 
 
 NOTE: To make updates to the intake or weekly questionnaire, repeat the entire process and reupload the surveys using the same scripts.
