@@ -30,10 +30,9 @@ Once on the Kubenetes -> clusters page:
 3. To install the platform we make use of the git repository [Cluster Management](https://github.com/InfectieradarBE/cluster-management)
 4. Once connected run ``` git clone https://github.com/InfectieradarBE/cluster-management.git ```
 5. Enter into the cloned folder by running ``` cd cluster-management ```
-6. This repository contains a branch for each of the countries where the deployment is to take place. Refer to the readme in [Cluster Management](https://github.com/InfectieradarBE/cluster-management)
-7. Switch to the relevant country branch by runnning ``` git checkout <country_name> ``` (ex: git checkout belgium)
-8. Refer to section 2 of the readme in Cluster Management to perform the required configurations before installation.
-9. Once ready, run the script install_start.sh by running ``` sh install_start.sh ```
+6. This repository contains a branch for each of the countries where the deployment is to take place. Refer to the readme in [Cluster Management](https://github.com/influenzanet/cluster-management)
+7. Refer to the Set up section of the readme in Cluster Management to perform the required configurations before installation.
+8. Once ready, run the script install_start.sh by running ``` sh install_start.sh ```
 
 Note: Sudo permissions may be required to run the install script.
 
