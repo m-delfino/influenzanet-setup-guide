@@ -90,29 +90,29 @@ NOTE: You need to be signed as the owner of the repository to add these secrets.
 
 The different secrets needed for each of the Github Repositories are listed below:
 
-1. **Participant-webapp**:
-    1.1. DOCKER_USER : Username for the account on dockerhub
-    1.2. DOCKER_PASSWORD: Password for the account on dockerhub
-    1.3. DOCKER_ORGANIZATION: Name of the organisation on dockerhub under which the repositories exist. (Ex: infectieradarbe)
-    1.4. DOCKER_REPO_NAME: The actual name of the image repository to push to on dockerhub. (Ex:participant-webapp)
-2. **Study-service**:
-    2.1. Same fields as participant-webapp
-3. **User-management-service**:
-    3.1. Same fields as the participant-webapp
-4. **Logging-service**:
-    4.1. Same fields as the participant-webapp
-5. **API-Gateway**:
-    5.1. DOCKER_USER
-    5.2. DOCKER_PASSWORD
-    5.3. DOCKER_ORGANIZATION
-    5.4. DOCKER_REPO_MA: Name of the dockerhub repository for management-api. (ex: management-api-image)
-    5.5. DOCKER_REPO_PA: Name of the dockerhub repository for participant-api. (ex: participant-api-image)
-6. **Messaging-service**:
-    6.1. DOCKER_USER
-    6.2. DOCKER_PASSWORD
-    6.3. DOCKER_ORGANIZATION
-    6.4. DOCKER_REPO_MS: Name of the dockerhub repository for messaging-service (ex: messaging-service-image)
-    6.5. DOCKER_REPO_MS: Name of the dockerhub repository for messaging-service (ex: messaging-service-image)
-    6.6. DOCKER_REPO_MS: Name of the dockerhub repository for messaging-service (ex: messaging-service-image)
+ - **Participant-webapp**:
+	 - DOCKER_USER : Username for the account on dockerhub
+	 - DOCKER_PASSWORD: Password for the account on dockerhub
+	 - DOCKER_ORGANIZATION: Name of the organisation on dockerhub under which the repositories exist. (Ex: infectieradarbe)
+	 - DOCKER_REPO_NAME: The actual name of the image repository to push to on dockerhub. (Ex:participant-webapp)
+ - **Study-service**:
+	 - Same fields as participant-webapp
+ - **User-management-service**:
+	 - Same fields as the participant-webapp
+ - **Logging-service**:
+	 - Same fields as the participant-webapp
+ -  **API-Gateway**:
+	 - DOCKER_USER
+	 - DOCKER_PASSWORD
+	 - DOCKER_ORGANIZATION
+	 - DOCKER_MANAGEMENT_API_REPO_NAME: Name of the dockerhub repository for management-api. (ex: management-api-image)
+	 - DOCKER_PARTICIPANT_API_REPO_NAME: Name of the dockerhub repository for participant-api. (ex: participant-api-image)
+ - **Messaging-service**:
+	 - DOCKER_USER
+	 - DOCKER_PASSWORD
+	 - DOCKER_ORGANIZATION
+	 - DOCKER_REPO_MS: Name of the dockerhub repository for messaging-service (ex: messaging-service-image)
+	 - DOCKER_REPO_MSC: Name of the dockerhub repository for messaging-scheduler (ex: messaging-scheduler-image)
+	 - DOCKER_REPO_EC: Name of the dockerhub repository for email-client-service (ex: email-client-service-image)
 
-Once the dockerhub repositories and the secrets have been configured. You will notice that on every Github commit, a new image is built and pushed to the docker hub repository. The participant web-app still requires a manual trigger for a new build but again this can be configured as required. An easy method of identifying the different images is by using the version which is identical to the last tagged release in the respective Github repository.
+Once the dockerhub repositories and the secrets have been configured. You will notice that each repository can trigger a build by navigating to the actions tab on github and by clicking of the run manual workflow option. An easy method of identifying the different images is by using the version which is identical to the last tagged release in the respective Github repository. You can also choose to override the version being tagged and provide it through a manual input on triggering the workflow.
