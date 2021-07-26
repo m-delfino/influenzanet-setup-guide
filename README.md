@@ -1,34 +1,34 @@
-# infectieradar-getting-started
-This is a brief guide to the different repositories present within the scope of Infectieradar. It also acts as the WIKI to the major actions - installation, configurations, updates and maintenance; that can be performed with Infectieradar.
+# Influenzanet-getting-started
+This is a brief guide to the different repositories present within the scope of Influenzanet. It also acts as the WIKI to the major actions - installation, configurations, updates and maintenance; that can be performed with Influenzanet.
 
-**Note**: We refer to each repository that forms a part of Infectieradar with the term 'service'. While not all are services in the true sense of the word, it helps make our explanation easier.
+**Note**: We refer to each repository that forms a part of Influenzanet with the term 'service'. While not all are services in the true sense of the word, it helps make our explanation easier.
 
-First we take a look at the different parts of Infectieradar. Here, we use the term repository to specify a "Github repository" unless stated otherwise.
+First we take a look at the different parts of Influenzanet. Here, we use the term repository to specify a "Github repository" unless stated otherwise.
 
 # Current Service Information
-These repositories form the core services of the Infectieradar platform.
+These repositories form the core services of the Influenzanet platform.
 
 | Service        | Repository           | Function  |
 | -------------- | -------------------- | ----------------:|
 | participant-api      | api-gateway | Default backend API Gateway for web participants |
-| management-api      | api-gateway | BAckend API Gateway for the researchers and admins of Infectieradar |
+| management-api      | api-gateway | BAckend API Gateway for the researchers and admins of Influenzanet |
 | study-service      | study-service | Backend service responsible for mananging studies and surveys in the system |
 | user-management-service      | user-management-service | Backed service for the management of users in the system |
 | email-client-service      | messaging-service | Backend service responsible for sending emails out of the system |
 | message-scheduler      | messaging-service | Backend service that triggers events to send out emails periodically|
 | messaging-service      | messaging-service | Backend service that manages processing of all messages in the system |
 | logging-service      | logging-service | Backend service responsible for logging into DB information from all services |
-| participant-webapp      | participant-webapp  | React based front-end of the Infectieradar platform |
+| participant-webapp      | participant-webapp  | React based front-end of the Influenzanet platform |
 
 
 # Supplementary Service Information
-These repositories act as supporting services and scripts to help set up, perform configurations and/or deploy the Infectieradar platform.
+These repositories act as supporting services and scripts to help set up, perform configurations and/or deploy the Influenzanet platform.
 
 | Service        | Repository           | Function  |
 | -------------- | -------------------- | ----------------:|
 | study-manager    | study-manager-app | Contains a React Application to help build surveys for researchers and export it as a JSON |
-| study-manager-scripts    | study-manager-scripts | Scripts to create studies, upload surveys, upload email templates, and perform config changes on a running Infectieradar platform |
-| cluster-management     | cluster-management | Scripts that help install Infectieradar on a GKE cluster, contains scripts to also stop all deployed services on a running cluster and restart them |
+| study-manager-scripts    | study-manager-scripts | Scripts to create studies, upload surveys, upload email templates, and perform config changes on a running Influenzanet platform |
+| cluster-management     | cluster-management | Scripts that help install Influenzanet on a GKE cluster, contains scripts to also stop all deployed services on a running cluster and restart them |
 
 
 # Walkthrough Sections
@@ -50,7 +50,7 @@ In this section we explain the following tasks:
 | -------------- | ----------------:|
 | Starting from scratch - set up the required Github repositories    | [repository-creation](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/installation/1-repository-creation.md) |
 | Set-up dockerhub and automated builds   | [dockerhub-setup](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/installation/2-dockerhub-setup.md) |
-| Prepare a Google Kubernetes Environment and Install Infectieradar    | [gke-infectieradar-installation](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/installation/3-install-infectieradar-gke.md) |
+| Prepare a Google Kubernetes Environment and Install Influenzanet    | [gke-infectieradar-installation](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/installation/3-install-infectieradar-gke.md) |
 
 ## Initial System Configurations
 
@@ -61,7 +61,7 @@ The topics covered are as follows:
 | Section Topic        | Instruction File  |
 | -------------- | ----------------:|
 | How to access Mongo DB and create the initial DB configurations    | [mongo-connect-configure](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/1-mongodb-config.md) |
-| Creating & uploading Studies and Surveys for the Infectieradar platform    | [create-study-surveys](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/2-create-study-surveys.md) |
+| Creating & uploading Studies and Surveys for the Influenzanet platform    | [create-study-surveys](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/2-create-study-surveys.md) |
 | How to create and upload Email Templates to be sent out by the platform    | [create-upload-emails](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/3-email-setup.md) |
 | Setting up mailing service configurations| [mailing-configuration](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/5-mailing-config.md) |
 | Configuring layouts and pages in the web-ui| [web-ui-configuration](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/4-web-config.md) |
@@ -80,7 +80,7 @@ Topics covered here are:
 
 ## Maintenance Activities
 
-Activites to be scheduled over the life-cycle of the Infectieradar-platform:
+Activites to be scheduled over the life-cycle of the Influenzanet-platform:
 
 | Section Topic        | Instruction File  |
 | -------------- | ----------------:|
