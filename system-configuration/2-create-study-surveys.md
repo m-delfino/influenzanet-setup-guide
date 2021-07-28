@@ -7,14 +7,14 @@ influenzanet is firstly a survey platform. This section explains the steps invol
 To create, and upload studies and surveys you need to configure two repositories on a local machine:
 
 1. [Study-Manager-App](https://github.com/influenzanet/study-manager-app): Clone the repository in the link. Install the required dependencies by running ``` yarn start ```, and you can get started with designing the surveys.
-2. [Study-Manager-Scripts](https://github.com/influenzanet/study-manager-scripts): Clone the repository in the link. The readme here consists of explanations of how to upload new surveys and studies to a deployed version of influenzanet. Navigate to resources/config.yaml and enter the credentials of the admin user (configured in mongo configurations). Also, add the links for the management API and participant API. (Generally https://your-domain-goes-here/admin & https://your-domain-goes-here/api ) 
+2. [Admin-Scripts](https://github.com/influenzanet/admin-scripts): Clone the repository in the link. The readme here consists of explanations of how to upload new surveys and studies to a deployed version of influenzanet. Navigate to resources/config.yaml and enter the credentials of the admin user (configured in mongo configurations). Also, add the links for the management API and participant API. (Generally https://your-domain-goes-here/admin & https://your-domain-goes-here/api ) 
 
 
 ## Creating a study
 
 Studies contain surveys that are offered to participants of the study. To begin, we first create a study by following the steps below:
 
-1. Enter into the cloned [Study-Manager-Scripts](https://github.com/influenzanet/study-manager-scripts) folder by running ``` cd study-manager-scripts ``` folder.
+1. Enter into the cloned [Admin-Scripts](https://github.com/influenzanet/admin-scripts) folder by running ``` cd study-manager-scripts ``` folder.
 2. Navigate to resources/studies/props.yaml and give the new study a key in the studyKey attribute. (Ex: influenzanet-be).
 3. In the resources/studies/study_def.yaml you can change the translations that show up describing the study as suited to you.
 4. In the resources/studies/study_rules.yaml you can change configure how frequently the different surveys show up. But generally leave this file untouched.
@@ -32,7 +32,7 @@ Once the questions have been coded in, you can download the surveys for intake a
 3. This loads the visual representation of the intake survey. Scroll to the bottom, enter the studykey "influenzanet-be" (or what you set previously while creating a study) and click download.
 4. Repeat step 3 for weekly surveys.
 
-This should give you 2 surveys that you then need to copy into the resources/surveys folder of the locally cloned [Study-Manager-Scripts](https://github.com/influenzanet/study-manager-scripts) repository.
+This should give you 2 surveys that you then need to copy into the resources/surveys folder of the locally cloned [Admin-Scripts](https://github.com/influenzanet/admin-scripts) repository.
 
 Once these files have been copied, run the following:
 1. To upload the intake survey, ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/study/<downloaded-intake-file-name>.json ```
