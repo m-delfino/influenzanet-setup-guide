@@ -7,7 +7,7 @@ The images created in this manner are all stored in a central dockerhub reposito
 
 ## Pre-requisites
 
-To get started, a dockerhub account is needed where all the images can reside. To do so, go on to https://hub.docker.com/ and create a new account. (Example: A new dockerhub account by the name infectieradarbe).
+To get started, a dockerhub account is needed where all the images can reside. To do so, go on to https://hub.docker.com/ and create a new account. (Example: A new dockerhub account by the name influenzanet).
 
 ## Set up the required repositories
 
@@ -84,7 +84,7 @@ This can be modified to detect commits or pull requests on different braches as 
 
 Automated builds make use of secrets to store Dockerhub authentication information. This is used by Github actions to login to docker hub repository and push the newly built image to the hosted repository.
 
-To configure secrets for a Github repository navigate to the settings of the repo (ex: https://github.com/InfectieradarBE/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
+To configure secrets for a Github repository navigate to the settings of the repo (ex: https://github.com/influenzanet/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
 
 NOTE: You need to be signed as the owner of the repository to add these secrets.
 
@@ -93,7 +93,7 @@ The different secrets needed for each of the Github Repositories are listed belo
  - **Participant-webapp**:
 	 - DOCKER_USER : Username for the account on dockerhub
 	 - DOCKER_PASSWORD: Password for the account on dockerhub
-	 - DOCKER_ORGANIZATION: Name of the organisation on dockerhub under which the repositories exist. (Ex: infectieradarbe)
+	 - DOCKER_ORGANIZATION: Name of the organisation on dockerhub under which the repositories exist. (Ex: influenzanet)
 	 - DOCKER_REPO_NAME: The actual name of the image repository to push to on dockerhub. (Ex:participant-webapp)
  - **Study-service**:
 	 - Same fields as participant-webapp

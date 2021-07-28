@@ -1,11 +1,11 @@
 # Maintenance Activity Checklist
 
 
-The following represents the list of activities to be perfomed over the course of the lifecycle of Infectieradar:
+The following represents the list of activities to be perfomed over the course of the lifecycle of influenzanet:
 
 | Activity      | Priority  | Frequency |
 | -------------- | :----------------:| ----------------:|
-| Inspect support emails on infectieradar@uhasselt.be | High | As new emails come in / twice a week |
+| Inspect support emails on influenzanet@uhasselt.be | High | As new emails come in / twice a week |
 | Check mailgun logs | High | Everyday during initial release, 2-3 times a week after |
 | Check GKE resource usage [Cluster & per service] | Medium | Everyday during initial release, 2-3 times a week after |
 | Increase or decrease resource allocation GKE | Medium | As needed |

@@ -9,7 +9,7 @@ General guideline for handling bug reports or errors discovered in the system
 
 ## Types of Issues: 
 
-1. Errors reported via email to infectieradar@uhasselt.be
+1. Errors reported via email to influenzanet@uhasselt.be
 2. Errors detected through GKE logs, and Mailgun logs/analytics.
 
 
@@ -22,17 +22,17 @@ In case the error was reported via email, first follow the procedure laid out be
 
 Once an immediate response is drafted by the support team, the system admin takes the following steps: 
 1. First look at Mailgun logs to assess the problem.
-    - Log into mailgun, go to Sending -> Logs (select survey.infectieradar.be)
+    - Log into mailgun, go to Sending -> Logs (select survey.influenzanet.be)
     - Filter the logs according to the email id of the user facing the problem (if support request received)
     - Goal is to find which emails are failing or have been delivered too late.
     - Some example causes - > Registration email delivered too late, Login code delivered too late, or Login code delivery failed etc.
     - You can attempt to resend failed emails here, or also can view the content of the email to further help out the participant. (You can extract the code or the registration link directly and send to the participant)
     - Or if there is a different issue that requires mailgun support, immediate create a support request with Mailgun.
-2. To investigate GKE, log in with Infectieradar admin account into google cloud console.
+2. To investigate GKE, log in with influenzanet admin account into google cloud console.
     - Look for Kubernetes in the menu on the top left corner and click on clusters
     - Workloads gives you a description of the services that are currently running -> How many pods, which image version is being used, current limits on resources=> how much ram or cpu can a pod take (upper limit), etc.
     - To investigate mongodb
-        - Connect to mongodb by following the steps mentioned in [mongo-connect-configure](https://github.com/influenzanet/infectieradar-setup-guide/blob/master/system-configuration/1-mongodb-config.md)
+        - Connect to mongodb by following the steps mentioned in [mongo-connect-configure](https://github.com/influenzanet/influenzanet-setup-guide/blob/master/system-configuration/1-mongodb-config.md)
         - Now you should be inside the mongo shell
         - List the databases by running ```show dbs```
         - The following databases are of importance (we use belgium as an example instance here):
@@ -48,8 +48,8 @@ Once an immediate response is drafted by the support team, the system admin take
             - To turn off 2-FA run: db.users.updateOne({"account.accountID": "<email-id>"}, {$set: {"authType": ""}})
             - To reset the 2FA run: db.users.updateOne({"account.accountID": "<email-id>"}, {$set: {"authType": "2FA"}})
         - To find other information wrt to studies run : ```use belgium_studyDB``` (optional show collections)
-        - To find participants in the infectieradar-be study, run: ```db['infectieradar-be_participants'].count()```
-        - To find total responses collected so far, run: ```db['infectieradar-be_surveyResponses'].count()```
+        - To find participants in the influenzanet-be study, run: ```db['influenzanet-be_participants'].count()```
+        - To find total responses collected so far, run: ```db['influenzanet-be_surveyResponses'].count()```
         - Once done exit the mongo shell by typing: exit
         - Type exit once again to return to the GKE terminal
     - Investigate and check if resource limits are causing issues with any of the services.

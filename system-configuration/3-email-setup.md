@@ -1,8 +1,8 @@
 # Setting up Emails 
 
-This section deals with the kinds of email templates needed and how to upoad them to a running instance of Infectieradar.
+This section deals with the kinds of email templates needed and how to upoad them to a running instance of influenzanet.
 
-Infectieradar uses the following email templates:
+influenzanet uses the following email templates:
 
 | Email Name       | Purpose  |
 | -------------- | :----------------:|
@@ -20,21 +20,21 @@ NOTE: One additional type of email is the weekly reminder email.
 
 ## Pre-requisites
 
-1. [Study-Manager-Scripts](https://github.com/InfectieradarBE/study-manager-scripts): Clone the repository in the link. The readme here consists of explanations of how to upload new surveys and studies to a deployed version of Infectieradar. Navigate to resources/config.yaml and enter the credentials of admin user (configured in mongo configurations). Also add the links for the management api and participant api. (Generally https://your-domain-goes-here/admin & https://your-domain-goes-here/api ) 
+1. [Study-Manager-Scripts](https://github.com/influenzanet/study-manager-scripts): Clone the repository in the link. The readme here consists of explanations of how to upload new surveys and studies to a deployed version of influenzanet. Navigate to resources/config.yaml and enter the credentials of admin user (configured in mongo configurations). Also add the links for the management api and participant api. (Generally https://your-domain-goes-here/admin & https://your-domain-goes-here/api ) 
 
 
 ## Creating E-mail templates
 
-For each of the e-mail types, a template needs to be created. Additionally each template needs to have copies in different languages intended to be supported by the platform. An example of this can be found in the resources/email_templates folder of the [Study-Manager-Scripts](https://github.com/InfectieradarBE/study-manager-scripts) repository. You can chose to use the same (with changes to the logo's and content) or you can create fresh templates.
+For each of the e-mail types, a template needs to be created. Additionally each template needs to have copies in different languages intended to be supported by the platform. An example of this can be found in the resources/email_templates folder of the [Study-Manager-Scripts](https://github.com/influenzanet/study-manager-scripts) repository. You can chose to use the same (with changes to the logo's and content) or you can create fresh templates.
 
 Along with the content of each email, there are also certain variables that need to be configured. (For ex to insert the login code for 2FA in the verification code email: ```{{index . "verificationCode"}}```). 
 Use the examples as a guide to understand what variables are needed, and also refer to the variables listed in the [email-template guide](https://github.com/influenzanet/messaging-service/edit/master/docs/email-templates.md). 
 
 In addition, a weekly email template is also needed to send survey reminders to participants once every week. The example for this exists in the folder resources/auto_reminder_email (one for each language supported). 
 
-## Uploading the templates to Infectieradar
+## Uploading the templates to influenzanet
 
-After creating a fresh email template or updating (in case of changes) an existing one in the [Study-Manager-Scripts](https://github.com/InfectieradarBE/study-manager-scripts) repository, follow these steps:
+After creating a fresh email template or updating (in case of changes) an existing one in the [Study-Manager-Scripts](https://github.com/influenzanet/study-manager-scripts) repository, follow these steps:
 
 1. **Uploading email-templates**: Ensure that all the sets of emails are place under a folder named with the language-code (ex: en). This folder should reside within resources/email_templates. An example is already available for the de-be, en, fr-be, and nl-be codes. Along with the emails there should also be a file called subjects.yaml containing the following:
     ```
@@ -42,8 +42,8 @@ After creating a fresh email template or updating (in case of changes) an existi
     account-id-changed: "Your email address has been changed"
     password-changed: "Your password has been changed"
     password-reset: "Change your password"
-    registration: "Registration Infectieradar"
-    invitation: "Invitation Infectieradar"
+    registration: "Registration influenzanet"
+    invitation: "Invitation influenzanet"
     verification-code: "Verification code"
     verify-email: "Confirm email address"
     weekly: "Your weekly questionnaire is ready for you"
@@ -54,7 +54,7 @@ After creating a fresh email template or updating (in case of changes) an existi
 2. **Uploading Weekly reminders**: Save each language version of the weekly reminder as language-code.html within the resources/auto_reminder_email folder. Additionally, also create a settings.yaml file here with the following content:
     ```
     sendTo: "all-users"
-    studyKey: "infectieradar-be"
+    studyKey: "influenzanet-be"
     messageType: "weekly"
     nextTime: "2021-03-26-06:07:00"
     period: 86400
