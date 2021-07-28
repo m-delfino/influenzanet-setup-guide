@@ -27,7 +27,7 @@ These repositories act as supporting services and scripts to help set up, perfor
 | Service        | Repository           | Function  |
 | -------------- | -------------------- | ----------------:|
 | study-manager    | study-manager-app | Contains a React Application to help build surveys for researchers and export it as a JSON |
-| study-manager-scripts    | study-manager-scripts | Scripts to create studies, upload surveys, upload email templates, and perform config changes on a running Influenzanet platform |
+| admin-scripts    | admin-scripts | Scripts to create studies, upload surveys, upload email templates, and perform config changes on a running Influenzanet platform |
 | cluster-management     | cluster-management | Scripts that help install Influenzanet on a GKE cluster, contains scripts to also stop all deployed services on a running cluster and restart them |
 
 
