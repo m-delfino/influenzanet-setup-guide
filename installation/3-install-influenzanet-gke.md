@@ -22,7 +22,7 @@ Some knowledge of Kubernetes and Kubectl is useful for debugging errors.
 
 This should spawn up a new cluster with 2 nodes for us to install influenzanet on.
 
-## Installing Infectierdar
+## Installing Influenzanet
 
 Once on the Kubenetes -> clusters page:
 1. Click on the 3 dots next to the newly created cluster.
@@ -30,7 +30,7 @@ Once on the Kubenetes -> clusters page:
 3. To install the platform we make use of the git repository [Cluster Management](https://github.com/influenzanet/cluster-management)
 4. Once connected run ``` git clone https://github.com/influenzanet/cluster-management.git ```
 5. Enter into the cloned folder by running ``` cd cluster-management ```
-6. This repository contains a branch for each of the countries where the deployment is to take place. Refer to the readme in [Cluster Management](https://github.com/influenzanet/cluster-management)
+6. This repository requires you to configure a values.yaml file to provide details about your deployment. Refer to the readme in [Cluster Management](https://github.com/influenzanet/cluster-management)
 7. Refer to the Set up section of the readme in Cluster Management to perform the required configurations before installation.
 8. Once ready, run the script install_start.sh by running ``` sh install_start.sh ```
 
