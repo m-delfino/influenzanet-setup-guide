@@ -1,10 +1,32 @@
 # Build and Re-deploy changes.
 
-Since automated builds have been configured in the [dockerhub-setup](https://github.com/influenzanet/influenzanet-setup-guide/blob/master/installation/2-dockerhub-setup.md), any changes pushed to the repositories will automatically create a built docker image. This image is also uploaded to the dockerhub repository. 
+## Building new images after a code change
+
+Every repository that forms the core of the Influenzanet platform contains a github actions file associated with it. This action file is responsible for allowing us to build a new image out of the repository after a code change. The action also pushes the newly built image into the linked docker repository. To trigger this action perform the following:
+1. Navigate to the repository with a change (for ex: The participant-webapp repository after a change in the results page).
+2. CLick on the actions tab
+3. Select docker image CI under the workflow options
+4. CLick on the run workflow button. 
+5. In the input field you can enter a version number for the build, or leave it blank to reuse the version number from the latest release.
+6. Wait for the action to trigger and run to completion. This will push a built image to dockerhub with the input version number.
+
+**NOTE**: You can optionally also choose to automate this process for every new commit that is pushed into the repository. To do so, navigate to the .github/workflows folder and edit the docker-image.yml file.
+          Replace this section:
+          ```
+          on:
+            workflow_dispatch:
+              inputs:
+                tags:
+                  description: 'Docker Tag override: [leave empty if not needed]'
+          ```
+          with
+          ```
+          on: [push, pull_request]
+          ```
 
 **NOTE**: Only the repositories where a change has occurred needs to be re-built. However in the case of API-gateway and messaging-service, these are built into 2 and 3 new images respectively since these are sub-divided as discussed in [dockerhub-setup](https://github.com/influenzanet/influenzanet-setup-guide/blob/master/installation/2-dockerhub-setup.md).
 
-Since the build and deploy are automatically handled by Github and Dockerhub, the only remaining task is to link these newly created images to the installed influenzanet platform running on Google Kubernetes Engine.
+Since the build and deploy are then automatically handled by Github and Dockerhub, the only remaining task is to link these newly created images to the installed influenzanet platform running on Google Kubernetes Engine.
 
 ## Updating new image versions in GKE
 
