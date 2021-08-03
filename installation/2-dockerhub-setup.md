@@ -1,13 +1,13 @@
 
 # Dockerhub Setup
 
-If a code/configuration/styling/markdown change occurs in any of the 6 repositories, the repositories in question needs to be re-built. Here the term 're-built' refers to the process of creating a new ready-to-deploy version of the service (which we also call an image).
+If a code/configuration/styling/markdown change occurs in any of the 6 repositories, the repositories in question needs to be re-built. Basically, this happens every time content of any kind is changed in the front end or in the back end. Here the term 're-built' refers to the process of creating a new ready-to-deploy version of the service (which we also call an image).
 
-The images created in this manner are all stored in a central dockerhub repository
+The images created in this manner are all stored in a central dockerhub repository.
 
 ## Pre-requisites
 
-To get started, a dockerhub account is needed where all the images can reside. To do so, go on to https://hub.docker.com/ and create a new account. (Example: A new dockerhub account by the name influenzanet).
+To get started, a dockerhub account is needed where all the images can reside. To do so, go on to https://hub.docker.com/ and create a new account. (Example: A new dockerhub account by the name LOCAL_COUNTRY_NAME).
 
 ## Set up the required repositories
 
@@ -40,9 +40,9 @@ The table of reference for Image names and Github repositories follows below:
 
 ## Configuring Automated Builds
 
-Most of the Github repositories comes with a Github Action associated with it. The github action, is a file containing code to build a docker image, and push this image to the dockerhub repository on every new commit.
+Most of the Github repositories comes with a Github Action associated with it. The github action, is a file containing code to build a docker image, and push this image to the dockerhub repository on every new commit. **This is needed to link the Github repository and the Docker service image.**
 
-The file (present in the folder .github/workflows) genrally contains the following:
+The file (present in the folder REPOSITORY_NAME/.github/workflows) genrally contains the following:
 ```
 name: Docker Image CI
 
@@ -78,23 +78,23 @@ jobs:
       run: docker push ${{secrets.DOCKER_ORGANIZATION}}/${{secrets.DOCKER_REPO_NAME}}:$REPO_VERSION
 ```
 
-This can be modified to detect commits or pull requests on different braches as needed. 
+This can be modified to detect commits or pull requests on different branches as needed. 
 
 ### Docker secrets
 
-Automated builds make use of secrets to store Dockerhub authentication information. This is used by Github actions to login to docker hub repository and push the newly built image to the hosted repository.
+Automated builds make use of **secrets** to store Dockerhub authentication information. This is used by Github actions to login to docker hub repository and push the newly built image to the hosted repository.
 
-To configure secrets for a Github repository navigate to the settings of the repo (ex: https://github.com/influenzanet/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
+To configure secrets for a Github repository navigate to the settings of the repo (ex: https://github.com/YOUR_LOCAL_FORK/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
 
 NOTE: You need to be signed as the owner of the repository to add these secrets.
 
 The different secrets needed for each of the Github Repositories are listed below:
 
  - **Participant-webapp**:
-	 - DOCKER_USER : Username for the account on dockerhub
-	 - DOCKER_PASSWORD: Password for the account on dockerhub
-	 - DOCKER_ORGANIZATION: Name of the organisation on dockerhub under which the repositories exist. (Ex: influenzanet)
-	 - DOCKER_REPO_NAME: The actual name of the image repository to push to on dockerhub. (Ex:participant-webapp)
+	 - DOCKER_USER : Username for the account on dockerhub (Organizational level secret)
+	 - DOCKER_PASSWORD: Password for the account on dockerhub (Organizational level secret)
+	 - DOCKER_ORGANIZATION: Name of the organisation on dockerhub under which the repositories exist. (Ex: influenzanet) (Organizational level secret)
+	 - DOCKER_REPO_NAME: The actual name of the image repository to push to on dockerhub. (Ex:participant-webapp) (service-specific secret)
  - **Study-service**:
 	 - Same fields as participant-webapp
  - **User-management-service**:
@@ -115,4 +115,6 @@ The different secrets needed for each of the Github Repositories are listed belo
 	 - DOCKER_REPO_MSC: Name of the dockerhub repository for messaging-scheduler (ex: messaging-scheduler-image)
 	 - DOCKER_REPO_EC: Name of the dockerhub repository for email-client-service (ex: email-client-service-image)
 
-Once the dockerhub repositories and the secrets have been configured. You will notice that each repository can trigger a build by navigating to the actions tab on github and by clicking of the run manual workflow option. An easy method of identifying the different images is by using the version which is identical to the last tagged release in the respective Github repository. You can also choose to override the version being tagged and provide it through a manual input on triggering the workflow.
+Once the dockerhub repositories and the secrets have been configured, you will notice that each repository can trigger a build by navigating to the actions tab on github, selecting Docker Image CI and by clicking of the "run workflow" button. An easy method of identifying the different images is by using the version which is identical to the last tagged release in the respective Github repository. You can also choose to override the version being tagged and provide it through a manual input on triggering the workflow.
+
+**NOTE** After any change it is important to ensure that a new version of the front-end is running on our deployed server, to do this ensure that you trigger a new build on the Github actions sections of the repo in question. You can create a custom version number before triggering this build. This pushes a new image to dockerhub with the version number you provided. If you don't provide a custom version number, the image will be named after the most recent Github release for this repository.
