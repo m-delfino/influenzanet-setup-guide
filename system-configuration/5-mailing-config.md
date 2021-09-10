@@ -12,7 +12,7 @@ This sections walks through the configurations needed to connect an emailing ser
         - Password to connect with.
 2. Some mailing services might also need additional configurations to be made with the dns provider. These include registering the domain to be used with Influenzanet, and creating additional records within the dns settings. All mailing services have their requirements and generally have guides to help configure these.
 
-NOTE: This configuration can be skipped if the configuration changes are made to cluster-management as mentioned in the [readme](https://github.com/influenzanet/cluster-management/blob/master/README.md) before running the install script.
+**NOTE**: This configuration can be skipped if the configuration changes are made to cluster-management as mentioned in the [readme](https://github.com/influenzanet/cluster-management/blob/master/README.md) before running the install script.
 
 ### Configuration
 

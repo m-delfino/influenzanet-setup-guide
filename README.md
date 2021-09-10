@@ -2,7 +2,7 @@
 
 This is a brief guide to the different repositories present within the scope of Influenzanet. It also acts as the WIKI to the major actions - installation, configurations, updates and maintenance; that can be performed with Influenzanet.
 
-**Note**: We refer to each repository that forms a part of the Influenzanet platform with the term 'service'. Even though there is not a one to one correspondence between repositories and services, it helps make our explanation easier.
+**NOTE**: We refer to each repository that forms a part of the Influenzanet platform with the term 'service'. Even though there is not a one to one correspondence between repositories and services, it helps make our explanation easier.
 
 First we take a look at the different parts of Influenzanet. Here, we use the term repository to specify a "GitHub repository" unless stated otherwise.
 

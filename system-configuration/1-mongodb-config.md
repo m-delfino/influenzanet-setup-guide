@@ -20,7 +20,7 @@ This also assumes that you have created the required entries for Mongo usernames
 
 6. That should bring you into the mongo shell where you can look up databases, collections, entries, etc.
 
-Note: Only administrators of the cluster have access to this.
+**NOTE**: Only administrators of the cluster have access to this.
 
 ## Initial Mongo configurations
 

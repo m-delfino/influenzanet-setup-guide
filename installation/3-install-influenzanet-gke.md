@@ -33,6 +33,6 @@ Once on the Kubernetes -> clusters page:
 
 The install script sets up the load balancer, docker containers for each of the services that are part of the platform, creates a mongoDB instance and also sets up the nginx ingress to route requests to the web app, participant or management api services respectively.
 
-**Note**: In case the script fails, you'll have to navigate the logs and see which deployments are failing. First refer to the [Rollback and Error handling section](../redeploying-changes/3-rollback-errors.md). If that doesn't help, either run the stop.sh script and then run the start.sh script again or go into cluster-management folder and re-create the deployment that is failing using the ```kubectl create``` command. The cheat sheet for the ```kubectl``` command can be found at [Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/).
+**NOTE**: In case the script fails, you'll have to navigate the logs and see which deployments are failing. First refer to the [Rollback and Error handling section](../redeploying-changes/3-rollback-errors.md). If that doesn't help, either run the stop.sh script and then run the start.sh script again or go into cluster-management folder and re-create the deployment that is failing using the ```kubectl create``` command. The cheat sheet for the ```kubectl``` command can be found at [Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/).
 
 **Next**: [MongoDB Setup](../system-configuration/1-mongodb-config.md)
