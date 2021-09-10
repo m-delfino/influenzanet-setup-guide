@@ -4,11 +4,11 @@ Before proceeding, we cover the different types of changes where a simple, strai
 
 1. Markdown changes: Changing the text on any of the web-pages.
 
-2. Image/Video changes: Change images, or video links in the influenzanet web UI.
+2. Image/Video changes: Change images, or video links in the Influenzanet web UI.
 
-3. Bug fixes: Tested changes to any of the 6 repositories or 9 images that form a part of influenzanet.
+3. Bug fixes: Tested changes to any of the 6 repositories or 9 images that form a part of Influenzanet.
 
-4. New features: Tested feature addition/changes to any components of the influenzanet platform.
+4. New features: Tested feature addition/changes to any components of the Influenzanet platform.
 
 These are the scenarios where a re-deployment is not advised or is simply not needed:
 

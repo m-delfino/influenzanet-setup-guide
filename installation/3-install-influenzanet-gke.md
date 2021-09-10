@@ -1,4 +1,4 @@
-# Setting up GKE cluster and installing influenzanet
+# Setting up GKE cluster and installing Influenzanet
 
 This topic involves instructions on bringing up a cluster on [GKE](https://cloud.google.com/kubernetes-engine). This requisitions the hardware on which the services making up the Influenzanet platform will run. The second part of this walkthrough will focus on running the scripts needed to get Influenzanet services running on this cluster, using the docker images built in the previous configuration step [Dockerhub Setup](../installation/2-dockerhub-setup.md).
 

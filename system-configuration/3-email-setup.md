@@ -32,7 +32,7 @@ Use the examples as a guide to understand what variables are needed, and also re
 
 In addition, a weekly email template is also needed to send survey reminders to participants once every week. The example for this exists in the folder resources/auto_reminder_email (one for each language supported). 
 
-## Uploading the templates to influenzanet
+## Uploading the templates to Influenzanet
 
 After creating a fresh email template or updating (in case of changes) an existing one in the [admin-scripts](https://github.com/influenzanet/admin-scripts) repository, follow these steps:
 

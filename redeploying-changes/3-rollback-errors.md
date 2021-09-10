@@ -62,7 +62,7 @@ There are two versions of this available:
     
     1.4. Connect to the cluster and re-run the ```sh install_start.sh``` script.
     
-    1.5. This will re-create not just the influenzanet workloads, but also the certificate manager, nginx ingress controller and recreates all the persisitant volume claims.
+    1.5. This will re-create not just the Influenzanet workloads, but also the certificate manager, nginx ingress controller and recreates all the persisitant volume claims.
     
     1.6. Navigate to storage and restore the backed up version to retain the database entries.
     

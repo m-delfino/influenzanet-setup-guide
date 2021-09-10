@@ -36,7 +36,7 @@ on: [push, pull_request]
 
 **NOTE**: Only the repositories where a change has occurred needs to be re-built. However in the case of API-gateway and messaging-service, these are built into 2 and 3 new images respectively since these are sub-divided as discussed in [Dockerhub Setup](../installation/2-dockerhub-setup.md).
 
-Since the build and deploy are then automatically handled by Github and Dockerhub, the only remaining task is to link these newly created images to the installed influenzanet platform running on Google Kubernetes Engine.
+Since the build and deploy are then automatically handled by Github and Dockerhub, the only remaining task is to link these newly created images to the installed Influenzanet platform running on Google Kubernetes Engine.
 
 ## Updating new image versions in GKE
 

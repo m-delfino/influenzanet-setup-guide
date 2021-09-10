@@ -42,7 +42,7 @@ Once an immediate response is drafted by the support team, the system admin take
     
     - Or if there is a different issue that requires mailgun support, immediate create a support request with Mailgun.
 
-2. To investigate GKE, log in with influenzanet admin account into google cloud console.
+2. To investigate GKE, log in with Influenzanet admin account into google cloud console.
 
     - Look for Kubernetes in the menu on the top left corner and click on clusters
     

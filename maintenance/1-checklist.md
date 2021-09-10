@@ -1,7 +1,7 @@
 # Maintenance Activity Checklist
 
 
-The following represents the list of activities to be perfomed over the course of the lifecycle of influenzanet:
+The following represents the list of activities to be perfomed over the course of the lifecycle of Influenzanet:
 
 | Activity      | Priority  | Frequency |
 | -------------- | :----------------:| ----------------:|
