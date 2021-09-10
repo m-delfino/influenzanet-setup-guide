@@ -4,7 +4,7 @@ This is a brief guide to the different repositories present within the scope of 
 
 **Note**: We refer to each repository that forms a part of the Influenzanet platform with the term 'service'. Even though there is not a one to one correspondence between repositories and services, it helps make our explanation easier.
 
-First we take a look at the different parts of Influenzanet. Here, we use the term repository to specify a "Github repository" unless stated otherwise.
+First we take a look at the different parts of Influenzanet. Here, we use the term repository to specify a "GitHub repository" unless stated otherwise.
 
 ## Platform services
 
@@ -49,7 +49,7 @@ In this section we explain the following tasks:
 
 | Section Topic        | Instruction File  |
 | -------------- | ----------------:|
-| Starting from scratch - set up the required Github repositories    | [repository-creation](installation/1-repository-creation.md) |
+| Starting from scratch - set up the required GitHub repositories    | [repository-creation](installation/1-repository-creation.md) |
 | Set-up dockerhub and image builds   | [dockerhub-setup](installation/2-dockerhub-setup.md) |
 | Prepare a Google Kubernetes Environment and Install Influenzanet    | [gke-influenzanet-installation](installation/3-install-influenzanet-gke.md) |
 

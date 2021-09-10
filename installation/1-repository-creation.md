@@ -1,6 +1,6 @@
 # Creating the repositories
 
-To begin with, it is advisable to set up an institution account on Github ideally with the country of deployment in mind. For example: `Influenzanet-IT`.
+To begin with, it is advisable to set up an institution account on GitHub ideally with the country of deployment in mind. For example: `Influenzanet-IT`.
 
 ##  Influenzanet
 
@@ -12,15 +12,15 @@ The major components and services of the Influenzanet platform are centrally hos
 
 ### Setting up the repositories
 
-For each of the relevant services listed in the table in the central [README.md](../README.md), navigate to the repository hosted at Influenzanet. Make sure you are logged into the institution account you created on Github. Fork each of the repositories in the table into your institutions personal github account. Once completed you should have 9 forked repositories (namely: api-gateway, study-service, user-management-service, messaging-service, logging-service, participant-webapp, study-manager-app, admin-scripts, cluster-management).
+For each of the relevant services listed in the table in the central [README.md](../README.md), navigate to the repository hosted at Influenzanet. Make sure you are logged into the institution account you created on GitHub. Fork each of the repositories in the table into your institutions personal GitHub account. Once completed you should have 9 forked repositories (namely: api-gateway, study-service, user-management-service, messaging-service, logging-service, participant-webapp, study-manager-app, admin-scripts, cluster-management).
 
 **For example:** to add the participant API and management API, navigate to the [api-gateway](https://github.com/influenzanet/api-gateway) repository in Influenzanet, click on the fork icon to create a forked copy into your GitHub account.
 
 ### Manage Access 
 
-Once your repositories are forked, you can provide access to individual developers or teams that are working to deploy the Influenzanet platform. This has to be done for each of the forked repositories. If the decision is made to make changes only through the main Github account you have created (eg: `Influweb-IT`) this step can be skipped. 
+Once your repositories are forked, you can provide access to individual developers or teams that are working to deploy the Influenzanet platform. This has to be done for each of the forked repositories. If the decision is made to make changes only through the main GitHub account you have created (eg: `Influweb-IT`) this step can be skipped. 
 
-Permissions for access can be granted by navigating to the forked repository, click on the settings >> manage access >>invite a collaborator (this is visible only to the owner of the main Github account)
+Permissions for access can be granted by navigating to the forked repository, click on the settings >> manage access >>invite a collaborator (this is visible only to the owner of the main GitHub account)
 
 ### Maintaining sync with Influenzanet
 

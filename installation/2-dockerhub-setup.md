@@ -12,7 +12,7 @@ To get started, a dockerhub repository is needed where all the images can reside
 
 ## Configuring docker image builds
 
-Each of the Github repositories comes with a Github Action associated with it. The github action is a file containing code to build a docker image and push this image to the previously created dockerhub repository.
+Each of the GitHub repositories comes with a GitHub Action associated with it. The GitHub action is a file containing code to build a docker image and push this image to the previously created dockerhub repository.
 
 The action file (present in the repository folder .github/workflows) generally contains the following:
 
@@ -55,13 +55,13 @@ By default the build action must be run manually. This behaviour can be modified
 
 ### Docker secrets
 
-Action files make use of **secrets** to store Dockerhub authentication information. They are used by Github actions to login into the Dockerhub repository and push the newly built image.
+Action files make use of **secrets** to store Dockerhub authentication information. They are used by GitHub actions to login into the Dockerhub repository and push the newly built image.
 
-To configure secrets for a Github repository navigate to the settings of the repository  (ex: https://github.com/Influweb-IT/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
+To configure secrets for a GitHub repository navigate to the settings of the repository  (ex: https://github.com/Influweb-IT/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
 
 **Organization secrets** will be visible to each repository in the organization. **Repository secrets** will be visible only to that particular repository.
 
-The different secrets needed for each of the Github Repositories are listed below:
+The different secrets needed for each of the GitHub Repositories are listed below:
 
  - **participant-webapp**:
 	 - DOCKER_USER : Username for the account on dockerhub (Organization secret)
@@ -88,6 +88,6 @@ The different secrets needed for each of the Github Repositories are listed belo
 	 - DOCKER_REPO_MSC: Name of the dockerhub image for messaging-scheduler (ex: messaging-scheduler-image) (Repository secret)
 	 - DOCKER_REPO_EC: Name of the dockerhub image for email-client-service (ex: email-client-service-image) (Repository secret)
 
-Once the Dockerhub repositories and the secrets have been configured, you will notice that each repository can trigger a build by navigating to the actions tab on Github, selecting "Docker Image CI" and by clicking of the "run workflow" button. An easy method of identifying the different images is by using the version which is identical to the last tagged release in the respective Github repository. You can also choose to override the version being tagged and provide it through a manual input on triggering the workflow.
+Once the Dockerhub repositories and the secrets have been configured, you will notice that each repository can trigger a build by navigating to the actions tab on GitHub, selecting "Docker Image CI" and by clicking of the "run workflow" button. An easy method of identifying the different images is by using the version which is identical to the last tagged release in the respective GitHub repository. You can also choose to override the version being tagged and provide it through a manual input on triggering the workflow.
 
 **Next**: [Setting up GKE](../installation/3-install-influenzanet-gke.md)

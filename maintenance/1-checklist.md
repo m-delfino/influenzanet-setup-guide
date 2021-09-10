@@ -14,7 +14,7 @@ The following represents the list of activities to be perfomed over the course o
 | Routinely download participant responses | Medium | Weekly |
 | Look for potential node upgrades by GKE | Low | Monthly |
 | Communicate scheduled down-time when notified by GKE | Monthly | Monthly |
-| Merge new versions from Upstream on Github | Low | Monthly |
+| Merge new versions from Upstream on GitHub | Low | Monthly |
 | Re-deploy new versions if approved | Low | Monthly or more |
 
 **Next**: [Issue Resolution](../maintenance/2-issue-resolution.md)

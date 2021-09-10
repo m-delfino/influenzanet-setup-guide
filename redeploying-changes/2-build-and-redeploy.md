@@ -2,7 +2,7 @@
 
 ## Building new images after a code change
 
-Every repository that forms the core of the Influenzanet platform contains a github actions file associated with it. This action file is responsible for allowing us to build a new image out of the repository after a code change. The action also pushes the newly built image into the linked docker repository. To trigger this action perform the following:
+Every repository that forms the core of the Influenzanet platform contains a GitHub actions file associated with it. This action file is responsible for allowing us to build a new image out of the repository after a code change. The action also pushes the newly built image into the linked docker repository. To trigger this action perform the following:
 
 1. Navigate to the repository with a change (for ex: The participant-webapp repository after a change in the results page).
 
@@ -36,7 +36,7 @@ on: [push, pull_request]
 
 **NOTE**: Only the repositories where a change has occurred needs to be re-built. However in the case of API-gateway and messaging-service, these are built into 2 and 3 new images respectively since these are sub-divided as discussed in [Dockerhub Setup](../installation/2-dockerhub-setup.md).
 
-Since the build and deploy are then automatically handled by Github and Dockerhub, the only remaining task is to link these newly created images to the installed Influenzanet platform running on Google Kubernetes Engine.
+Since the build and deploy are then automatically handled by GitHub and Dockerhub, the only remaining task is to link these newly created images to the installed Influenzanet platform running on Google Kubernetes Engine.
 
 ## Updating new image versions in GKE
 
@@ -44,9 +44,9 @@ Running the installation scripts in [gke-influenzanet-installation](https://gith
 
 To update the deployment and use the newly built image, we can take an example of a change that occurs in the participant-webapp:
 
-1. Once a code change is made, wait for Github to complete building and deploying the image to Dockerhub.
+1. Once a code change is made, wait for GitHub to complete building and deploying the image to Dockerhub.
 
-2. You can get the version number of this new build by signing into dockerhub, click on the repository (here the participant-webapp  repository), look for a recently uploaded image. Generally version numbers are marked according to the latest tags of their corresponding Github repositories.
+2. You can get the version number of this new build by signing into dockerhub, click on the repository (here the participant-webapp  repository), look for a recently uploaded image. Generally version numbers are marked according to the latest tags of their corresponding GitHub repositories.
 
 3. Next sign into GKE, navigate to Kubernetes Engine, and click on workloads.
 
