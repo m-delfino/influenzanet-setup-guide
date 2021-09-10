@@ -62,7 +62,7 @@ Once an immediate response is drafted by the support team, the system admin take
             
             - `begium_studyDB` -> contains collections for each study in the platform and it’s participants, surveys and surveyResponses.
 
-        - To use a database enter ```use db-name```. For ex: ```use belgium_users```
+        - To use a database enter ```use db-name```. For eg: ```use belgium_users```
         
         - To find user count run ```db.users.count()``` after selecting the belgium_users database for use.
         

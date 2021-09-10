@@ -57,7 +57,7 @@ By default the build action must be run manually. This behaviour can be modified
 
 Action files make use of **secrets** to store Dockerhub authentication information. They are used by GitHub actions to login into the Dockerhub repository and push the newly built image.
 
-To configure secrets for a GitHub repository navigate to the settings of the repository  (ex: https://github.com/Influweb-IT/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
+To configure secrets for a GitHub repository navigate to the settings of the repository  (eg: https://github.com/Influweb-IT/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
 
 **Organization secrets** will be visible to each repository in the organization. **Repository secrets** will be visible only to that particular repository.
 
@@ -78,15 +78,15 @@ The different secrets needed for each of the GitHub Repositories are listed belo
 	 - DOCKER_USER (Organization secret)
 	 - DOCKER_PASSWORD (Organization secret)
 	 - DOCKER_ORGANIZATION (Organization secret)
-	 - DOCKER_MANAGEMENT_API_REPO_NAME: Name of the dockerhub image for management-api. (ex: management-api-image) (Repository secret)
-	 - DOCKER_PARTICIPANT_API_REPO_NAME: Name of the dockerhub image for participant-api. (ex: participant-api-image) (Repository secret)
+	 - DOCKER_MANAGEMENT_API_REPO_NAME: Name of the dockerhub image for management-api. (eg: management-api-image) (Repository secret)
+	 - DOCKER_PARTICIPANT_API_REPO_NAME: Name of the dockerhub image for participant-api. (eg: participant-api-image) (Repository secret)
  - **messaging-service**:
 	 - DOCKER_USER (Organization secret)
 	 - DOCKER_PASSWORD (Organization secret)
 	 - DOCKER_ORGANIZATION (Organization secret)
-	 - DOCKER_REPO_MS: Name of the dockerhub image for messaging-service (ex: messaging-service-image) (Repository secret)
-	 - DOCKER_REPO_MSC: Name of the dockerhub image for messaging-scheduler (ex: messaging-scheduler-image) (Repository secret)
-	 - DOCKER_REPO_EC: Name of the dockerhub image for email-client-service (ex: email-client-service-image) (Repository secret)
+	 - DOCKER_REPO_MS: Name of the dockerhub image for messaging-service (eg: messaging-service-image) (Repository secret)
+	 - DOCKER_REPO_MSC: Name of the dockerhub image for messaging-scheduler (eg: messaging-scheduler-image) (Repository secret)
+	 - DOCKER_REPO_EC: Name of the dockerhub image for email-client-service (eg: email-client-service-image) (Repository secret)
 
 Once the Dockerhub repositories and the secrets have been configured, you will notice that each repository can trigger a build by navigating to the actions tab on GitHub, selecting "Docker Image CI" and by clicking of the "run workflow" button. An easy method of identifying the different images is by using the version which is identical to the last tagged release in the respective GitHub repository. You can also choose to override the version being tagged and provide it through a manual input on triggering the workflow.
 

@@ -4,7 +4,7 @@
 
 Every repository that forms the core of the Influenzanet platform contains a GitHub actions file associated with it. This action file is responsible for allowing us to build a new image out of the repository after a code change. The action also pushes the newly built image into the linked docker repository. To trigger this action perform the following:
 
-1. Navigate to the repository with a change (for ex: The participant-webapp repository after a change in the results page).
+1. Navigate to the repository with a change (for eg: The participant-webapp repository after a change in the results page).
 
 2. Click on the actions tab
 

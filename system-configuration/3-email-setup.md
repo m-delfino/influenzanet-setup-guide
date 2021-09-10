@@ -36,7 +36,7 @@ In addition, a weekly email template is also needed to send survey reminders to 
 
 After creating a fresh email template or updating (in case of changes) an existing one in the [admin-scripts](https://github.com/influenzanet/admin-scripts) repository, follow these steps:
 
-1. **Uploading email-templates**: Ensure that all the sets of emails are place under a folder named with the language-code (ex: en). This folder should reside within resources/email_templates. An example is already available for the de-be, en, fr-be, and nl-be codes. Along with the emails there should also be a file called subjects.yaml containing the following:
+1. **Uploading email-templates**: Ensure that all the sets of emails are place under a folder named with the language-code (eg: en). This folder should reside within resources/email_templates. An example is already available for the de-be, en, fr-be, and nl-be codes. Along with the emails there should also be a file called subjects.yaml containing the following:
 
     ```yaml
     account-deleted: "Your account has been successfully deleted"
