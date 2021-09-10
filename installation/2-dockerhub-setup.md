@@ -57,7 +57,7 @@ By default the build action must be run manually. This behaviour can be modified
 
 Action files make use of **secrets** to store Dockerhub authentication information. They are used by GitHub actions to login into the Dockerhub repository and push the newly built image.
 
-To configure secrets for a GitHub repository navigate to the settings of the repository  (eg: https://github.com/Influweb-IT/user-management-service/settings), and click on secrets. Here you can create new secrets for your repository.
+To configure secrets for a GitHub repository navigate to the settings of the repository  (eg: https://github.com/Influweb-IT/user-management-service), open the configuration page and click on secrets. Here you can create new secrets for your repository.
 
 **Organization secrets** will be visible to each repository in the organization. **Repository secrets** will be visible only to that particular repository.
 

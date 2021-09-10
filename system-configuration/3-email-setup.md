@@ -25,7 +25,7 @@ Clone the private repository [admin-scripts](https://github.com/influenzanet/adm
 
 ## Creating E-mail templates
 
-For each of the e-mail types, a template needs to be created. Additionally each template needs to have copies in different languages intended to be supported by the platform. An example of this can be found in the resources/email_templates folder of the [Study-Manager-Scripts](https://github.com/influenzanet/study-manager-scripts) repository. You can chose to use the same (with changes to the logo's and content) or you can create fresh templates.
+For each of the e-mail types, a template needs to be created. Additionally each template needs to have copies in different languages intended to be supported by the platform. An example of this can be found in the resources/email_templates folder of the [admin-scripts](https://github.com/influenzanet/admin-scripts) repository. You can chose to use the same (with changes to the logo's and content) or you can create fresh templates.
 
 Along with the content of each email, there are also certain variables that need to be configured. (For ex to insert the login code for 2FA in the verification code email: ```{{index . "verificationCode"}}```). 
 Use the examples as a guide to understand what variables are needed, and also refer to the variables listed in the [email-template guide](https://github.com/influenzanet/messaging-service/blob/master/docs/email-templates.md). 
