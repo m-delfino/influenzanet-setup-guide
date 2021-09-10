@@ -37,13 +37,13 @@ Using the web application front-end, create a new user (who is to be promoted ad
 1. Switch to the user DB by running ```use belgium_users```
 2. Find the user created by the web-app by running:
 
-    ```
+    ```javascript
     admin = db.users.findOne({"account.accountID": "<email-id>"})
     ```
     
 3. Modify and update the user:
    
-   ```
+   ```javascript
    admin.account.accountConfirmedAt = NumberLong((new Date()).getTime());
    admin.roles = ["PARTICIPANT", "ADMIN"];
    admin.account.authType= "";

@@ -32,7 +32,7 @@ There may be some cases where one workloads consumes more resources than it need
 
 - Edit the yaml file and add the following section within the container tag:
 
-    ```
+    ```yaml
     resources:
         requests:
             cpu: 30m

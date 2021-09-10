@@ -20,7 +20,7 @@ You can optionally also choose to automate this process for every new commit tha
 
 Replace this section:
 
-```
+```yaml
 on:
 workflow_dispatch:
 inputs:
@@ -30,7 +30,7 @@ description: 'Docker Tag override: [leave empty if not needed]'
 
 with
 
-```
+```yaml
 on: [push, pull_request]
 ```
 
@@ -52,7 +52,7 @@ To update the deployment and use the newly built image, we can take an example o
 
 4. This contains a list of workloads (representing each deployment). Click on web-client in our example. Next click on edit. This should bring up a yaml file that describes the running version of web-client on GKE. The file should look like:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
