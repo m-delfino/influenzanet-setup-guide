@@ -16,6 +16,6 @@ These are the scenarios where a re-deployment is not advised or is simply not ne
 
 2. Changes like new emails, surveys or studies do not need a re-deployment.
 
-3. Configurations changes like changing ReCAPTCHA keys, mongo credentials, changing period between new weekly surveys, and changing user sign up limits do not need a re-deployment. General rule of thumb here is to refer to the deployment files in [Cluster Management](https://github.com/influenzanet/cluster-management). Any env variable defined in these files can be changed on the fly, without a re-deploying a new version.
+3. Configurations changes like changing ReCAPTCHA keys, mongo credentials, changing period between new weekly surveys, and changing user sign up limits do not need a re-deployment. General rule of thumb here is to refer to the deployment files in [cluster management](https://github.com/influenzanet/cluster-management). Any env variable defined in these files can be changed on the fly, without a re-deploying a new version.
 
 **Next**: [Redeploying Changes](../redeploying-changes/2-build-and-redeploy.md)
