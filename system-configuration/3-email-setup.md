@@ -88,4 +88,4 @@ After creating a fresh email template or updating (in case of changes) an existi
     
     2.5. To upload the weekly reminder run the following script:  ``` python run_create_auto_mail.py ```
    
-**Next**: [When To Redeploy Changes](../redeploying-changes/1-change-types.md)
+**Next**: [Configuring the Web Front End](../system-configuration/4-web-config.md)
