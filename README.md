@@ -62,8 +62,8 @@ This section is to be followed once the installation and set-up has been complet
 | How to access Mongo DB and create the initial DB configurations    | [mongo-connect-configure](system-configuration/1-mongodb-config.md) |
 | Creating & uploading Studies and Surveys for the Influenzanet platform    | [create-study-surveys](system-configuration/2-create-study-surveys.md) |
 | How to create and upload Email Templates to be sent out by the platform    | [create-upload-emails](system-configuration/3-email-setup.md) |
-| Setting up mailing service configurations| [mailing-configuration](system-configuration/5-mailing-config.md) |
 | Configuring layouts and pages in the web-ui| [web-ui-configuration](system-configuration/4-web-config.md) |
+| Setting up mailing service configurations| [mailing-configuration](system-configuration/5-mailing-config.md) |
 
 ### 3. How to make changes and re-deploy
 
