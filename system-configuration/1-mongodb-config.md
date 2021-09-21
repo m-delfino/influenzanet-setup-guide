@@ -47,7 +47,7 @@ Using the web application front-end, create a new user (who is to be promoted ad
    admin.account.accountConfirmedAt = NumberLong((new Date()).getTime());
    admin.roles = ["PARTICIPANT", "ADMIN"];
    admin.account.authType= "";
-   db.user.replaceOne(({"account.accountID": "<email-id>"}, admin);
+   db.users.replaceOne({"account.accountID": "<email-id>"}, admin);
    ```
 
 This verifies and gives admin rights to the user in question, also disabling two factor authentication.
