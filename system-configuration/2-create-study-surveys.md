@@ -47,9 +47,12 @@ Once the questions have been coded in, you can download the surveys for intake a
 This should give you 2 surveys that you then need to copy into the resources/surveys folder of the locally cloned [admin-scripts](https://github.com/influenzanet/admin-scripts) repository.
 
 Once these files have been copied, run the following:
-1. To upload the intake survey, ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/study/<downloaded-intake-file-name>.json ```
-2. To upload the weekly survey, ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/study/<downloaded-weekly-file-name>.json ```
 
+1. To upload the intake survey, ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/surveys/<downloaded-intake-file-name>.json ```
+
+2. To upload the weekly survey, ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/surveys/<downloaded-weekly-file-name>.json ```
+
+3. Lastly, to upload the migration survey (needed for some internal configuration), ```python run_save_survey.py --study_key <your-study-key> --survey_json resources/surveys/migration.json ``` (this file is already present in the folder)
 
 With these steps completed, a logged-in user should see the intake survey. Weekly surveys will show up once the intake has been filled, on the configured day of the week.
 
